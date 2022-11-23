@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+    <h1>Währungsrechner</h1>
+    <div class="currency-converter">
+        <label for="currency1"></label>
+        <select name="currency1" id="currency1" onchange="selectOptionA()">
+            <option value="blabla">Währung A</option>
+            <option value="euro" >Euro</option>
+            <option value="dollar">US-Dollar</option>
+            <option value="rupien">Rupien</option>
+            <option value="yen">Yen</option>
+            <option value="argPeso">Peso (ARG)</option>
+            <option value="pfund">Pfund (GB)</option>
+            <option value="hkd">Honkkong-Dollar</option>
+            <option value="zloty">Zloty</option>
+            <option value="rubel">Rubel</option>
+            <option value="franken">Franken</option>
+
+        </select>
+        <br>
+        <br>
+        <input type="number" name="" id="curr1number">
+        <br>
+        </br>
+        <label for="currency2"></label>
+        <select name="currency2" id="currency2" onchange="selectOptionB()">
+            <option value="blabla">Währung B</option>
+            <option value="euro">Euro</option>
+            <option value="dollar">Dollar</option>
+            <option value="rupien">Rupien</option>
+            <option value="yen">Yen</option> 
+            <option value="argPeso">Peso (ARG)</option>
+            <option value="pfund">Pfund (GB)</option>
+            <option value="hkd">Honkkong-Dollar</option>
+            <option value="zloty">Zloty</option>
+            <option value="rubel">Rubel</option>
+            <option value="franken">Franken</option>
+       </select>
+       <br>
+       <br>
+       <div id="resultarea">
+        <p id="result">0</p>
+        </div>
+       <br>
+       <button style="border-radius: 25%;" onclick="calc()" id="calculate"><img src="calc.jpg" height="40px" style="cursor: pointer;"></button>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
