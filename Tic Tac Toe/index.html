@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styleTicTacToe.css">
+</head>
+<body>
+    <div class="game-field">
+        <table class="game-table">
+            <tr id="row-1">
+                <td onclick="showSymbol(1)" id="1"></td>
+                <td onclick="showSymbol(2)" id="2"></td>
+                <td onclick="showSymbol(3)" id="3"></td>
+            </tr>
+            <tr id="row-2">
+                <td onclick="showSymbol(4)" id="4"></td>
+                <td onclick="showSymbol(5)" id="5"></td>
+                <td onclick="showSymbol(6)" id="6"></td>
+            </tr>
+            <tr id="row-3">
+                <td onclick="showSymbol(7)" id="7"></td>
+                <td onclick="showSymbol(8)" id="8"></td>
+                <td onclick="showSymbol(9)" id="9"></td>
+            </tr>
+        </table>
+    </div>
+   <div style="margin-left: auto; margin-right: auto; display: block; width: 12%; padding: 10px;">
+    <button style="border-radius: 25%;" onclick="restart()"><img src="restart.jpg" height="40px" style="cursor: pointer;"></button>
+   </div> 
+</body>
+<script src="codeTicTacToe.js"></script>
+</html>
